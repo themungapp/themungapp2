@@ -6,7 +6,10 @@
 //  Copyright © 2016 Color & Space. All rights reserved.
 //
 
+
 import UIKit
+import Parse
+import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
