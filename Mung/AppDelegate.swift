@@ -18,8 +18,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        
+        Parse.enableLocalDatastore()
+        
+        // Initialize Parse.
+        Parse.setApplicationId("3bHSoQNTUYSGbEaLTrBiibmD8aAmRo07S2PA83YZ",
+                               clientKey: "cSkQUEforr9nNltQnwKPM0TRHzzgmhkYIQoXe5Xe")
+        
+//        PFTwitterUtils.initializeWithConsumerKey("DaEJqiBfTFJHKtsSk4GDoOIh",  consumerSecret:"buOCtSF4GzWZSnQiaBm9AYMo5kEqSEeD564g0tl7Q3SB7IiVVj")
+//        
+//        PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
+        
+//        return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        
+        // [Optional] Track statistics around application opens.
+        
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
+        
+
         return true
+
     }
 
     func applicationWillResignActive(application: UIApplication) {
