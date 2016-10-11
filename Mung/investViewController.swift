@@ -29,7 +29,7 @@ class investViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.tableFooterView = UIView(frame: CGRectZero)
+        tableView.tableFooterView = UIView(frame: CGRect.zero)
 
         configureTableView()
         
@@ -45,12 +45,12 @@ class investViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
         if goalTitles.count == 0 {
@@ -67,15 +67,15 @@ class investViewController: UITableViewController {
     }
 
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 //        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
         
-        let indexRow = indexPath.row
+        let indexRow = (indexPath as NSIndexPath).row
         
         
         if goalTitles.count == 0 {
             
-            let cell = tableView.dequeueReusableCellWithIdentifier("getStarted", forIndexPath: indexPath) as! noInvestmentsViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "getStarted", for: indexPath) as! noInvestmentsViewCell
             
             //            cell.getStartedButton.hidden = true
             cell.getStarted.text = "You don’t have any investments yet."
@@ -86,12 +86,12 @@ class investViewController: UITableViewController {
             
         } else {
         
-            let cell = tableView.dequeueReusableCellWithIdentifier("investment", forIndexPath: indexPath) as! investViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "investment", for: indexPath) as! investViewCell
             
             let width = self.tableView.frame.width
             let height = cell.frame.height
             
-            cell.overLay.frame = CGRectMake(0, 0, width, height)
+            cell.overLay.frame = CGRect(x: 0, y: 0, width: width, height: height)
             
             
             cell.goalLabel.text = goalTitles[indexRow]

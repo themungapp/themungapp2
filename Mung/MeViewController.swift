@@ -14,6 +14,7 @@ class MeViewController: UIViewController {
     @IBOutlet weak var mediaContainer: UIView!
     @IBOutlet weak var likesContainer: UIView!
     
+    
 
     
     override func viewDidLoad() {
@@ -28,12 +29,12 @@ class MeViewController: UIViewController {
     }
     
 
-    @IBAction func showcomponents(sender: AnyObject) {
+    @IBAction func showcomponents(_ sender: AnyObject) {
         
         
         if sender.selectedSegmentIndex == 0 {
             
-            UIView.animateWithDuration(0.5, animations: { 
+            UIView.animate(withDuration: 0.5, animations: { 
                 
                 self.tweetsContainer.alpha = 1
                 self.mediaContainer.alpha = 0
@@ -42,7 +43,7 @@ class MeViewController: UIViewController {
             })
         } else if sender.selectedSegmentIndex == 1 {
             
-            UIView.animateWithDuration(0.5, animations: {
+            UIView.animate(withDuration: 0.5, animations: {
             
             self.tweetsContainer.alpha = 0
             self.mediaContainer.alpha = 1
@@ -52,7 +53,7 @@ class MeViewController: UIViewController {
             
         } else {
             
-            UIView.animateWithDuration(0.5, animations: {
+            UIView.animate(withDuration: 0.5, animations: {
             
             self.tweetsContainer.alpha = 0
             self.mediaContainer.alpha = 0

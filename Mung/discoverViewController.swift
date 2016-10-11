@@ -13,21 +13,29 @@ import Parse
 class discoverViewController: UITableViewController {
     
     
-    var goalImages = ["pilot.jpg", "fashion.jpg"]
-    var goalTitles = ["Go to pilot school", "My Fashion Fotography Start Up", "Rose’s college fund"]
+    var goalImages = ["pilot.jpg", "fashion.jpg", "pilot.jpg", "fashion.jpg"]
+    var goalTitles = ["Go to pilot school", "My Fashion Fotography Start Up", "Rose’s college fund", "Rose’s college fund"]
     
+    var didScroll = false
+    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
-
-        let testObject = PFObject(className: "TestObject")
-        testObject["foo"] = "bar"
-        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-            print("Object has been saved.")
-        }
         
         
+        
+        
+        
+        
+    }
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        didScroll = true
+        print("IDID SCROLL")
         
         
     }
@@ -39,28 +47,28 @@ class discoverViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return goalImages.count
     }
 
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCellWithIdentifier("goal", forIndexPath: indexPath) as! goalViewCell
-        let indexRow = indexPath.row
+        let cell = tableView.dequeueReusableCell(withIdentifier: "goal", for: indexPath) as! goalViewCell
+        let indexRow = (indexPath as NSIndexPath).row
         
         
         
         let width = self.tableView.frame.width
         let height = cell.frame.height
         
-        cell.overLay.frame = CGRectMake(0, 0, width, height)
+        cell.overLay.frame = CGRect(x: 0, y: 0, width: width, height: height)
         
         cell.goalLabel.text = goalTitles[indexRow]
         cell.goalImage.image = UIImage(named: goalImages[indexRow])
@@ -68,8 +76,6 @@ class discoverViewController: UITableViewController {
         return cell
 
 
-    
-        return cell
     }
   
 

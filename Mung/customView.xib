@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="customView" customModule="Mung" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="249"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SlN-TX-bea">
+                    <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="1rP-4P-aVE"/>
+                        <constraint firstAttribute="height" constant="51" id="plZ-tE-UBx"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="1rP-4P-aVE"/>
+                        </mask>
+                    </variation>
+                </containerView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="gDs-nU-RlF">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="E9I-42-mfZ"/>
+                        <constraint firstAttribute="width" constant="80" id="wLR-6Q-2eD"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M34-57-aH9">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="AUK-hu-dMf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="gDs-nU-RlF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="55" id="Da1-lL-L46"/>
+                <constraint firstItem="gDs-nU-RlF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="M70-d8-Nxz"/>
+                <constraint firstItem="SlN-TX-bea" firstAttribute="top" secondItem="M34-57-aH9" secondAttribute="bottom" constant="34" id="NbZ-qM-EPJ"/>
+                <constraint firstAttribute="trailing" secondItem="M34-57-aH9" secondAttribute="trailing" constant="16" id="Rl1-Un-H0U"/>
+                <constraint firstAttribute="trailing" secondItem="SlN-TX-bea" secondAttribute="trailing" id="bio-bo-kiy"/>
+                <constraint firstAttribute="bottom" secondItem="SlN-TX-bea" secondAttribute="bottom" id="fcK-yc-w3K"/>
+                <constraint firstItem="SlN-TX-bea" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jEU-yl-Eqe"/>
+                <constraint firstItem="M34-57-aH9" firstAttribute="top" secondItem="gDs-nU-RlF" secondAttribute="bottom" constant="8" id="nUT-51-de3"/>
+                <constraint firstItem="M34-57-aH9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="qw1-rZ-p4t"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="profileImage" destination="gDs-nU-RlF" id="d0t-uB-0aM"/>
+                <outlet property="tabContainerView" destination="SlN-TX-bea" id="C4d-Kf-F2N"/>
+            </connections>
+            <point key="canvasLocation" x="-425" y="-556"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="profile" width="1500" height="1023"/>
+    </resources>
+</document>

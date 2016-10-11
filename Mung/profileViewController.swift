@@ -21,7 +21,7 @@ class profileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        pageControl.hidden = true
+        pageControl.isHidden = true
         
         
         // Do any additional setup after loading the view.
@@ -33,13 +33,13 @@ class profileViewController: UIViewController {
     }
     
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let tutorialPageViewController = segue.destinationViewController as? profileTabsViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let tutorialPageViewController = segue.destination as? profileTabsViewController {
             self.ProfileTabsViewController = tutorialPageViewController
         }
     }
     
-    @IBAction func didTapNextButton(sender: UIButton) {
+    @IBAction func didTapNextButton(_ sender: UIButton) {
         ProfileTabsViewController?.scrollToNextViewController()
     }
     

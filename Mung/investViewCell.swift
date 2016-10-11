@@ -32,13 +32,13 @@ class investViewCell: UITableViewCell {
 
 
         overLay.backgroundColor = UIColor(red:0.00, green:0.00, blue:0.00, alpha:0.7)
-        overLay.hidden = false
+        overLay.isHidden = false
         self.goalImage.addSubview(overLay)
 
         
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
