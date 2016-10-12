@@ -165,11 +165,16 @@ open class SimpleTabItem:NSObject{
         
         
         let trailingSpace = NSLayoutConstraint(item: container, attribute: NSLayoutAttribute.trailing, relatedBy: NSLayoutRelation.equal, toItem: countLabel, attribute: NSLayoutAttribute.trailing, multiplier: 1, constant: 5)
+        
         let leadingSpace = NSLayoutConstraint(item: countLabel, attribute: NSLayoutAttribute.leading, relatedBy: NSLayoutRelation.equal, toItem: container, attribute: NSLayoutAttribute.leading, multiplier: 1, constant: 35)
-        let bottonSpace = NSLayoutConstraint(item: container, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: countLabel, attribute: NSLayoutAttribute.bottom, multiplier: 1, constant: 2)
+        
+        let trailingSpaceTwo = NSLayoutConstraint(item: countLabel, attribute: NSLayoutAttribute.trailing, relatedBy: NSLayoutRelation.equal, toItem: container, attribute: NSLayoutAttribute.trailing, multiplier: 1, constant: 35)
+        
+        let bottomSpace = NSLayoutConstraint(item: container, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: countLabel, attribute: NSLayoutAttribute.bottom, multiplier: 1, constant: 2)
+        
         let topSpace = NSLayoutConstraint(item: countLabel, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: container, attribute: NSLayoutAttribute.top, multiplier: 1, constant: -35)
         
-        container.addConstraints([trailingSpace,leadingSpace,bottonSpace,topSpace])
+        container.addConstraints([trailingSpace,leadingSpace,bottomSpace,topSpace, trailingSpaceTwo])
         
     }
     

@@ -101,7 +101,7 @@ open class SimpleTabsViewController: UIViewController {
     }
     
     fileprivate func createMarker(){
-        activeMarker = UIView(frame: CGRect(x: 50, y: 50, width: 200, height: 2))
+        activeMarker = UIView(frame: CGRect(x: 50, y: 50, width: 200, height: 4))
         activeMarker.backgroundColor = markerFillColor
         activeMarker.translatesAutoresizingMaskIntoConstraints = false
         tabsContainer.addSubview(activeMarker)

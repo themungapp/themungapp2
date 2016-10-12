@@ -7,88 +7,31 @@
 //
 
 import UIKit
-import MXParallaxHeader
 
-class ViewController: UIViewController, SimpleTabsDelegate {
+class ViewController: UIViewController, SimpleTabsDelegate, UITableViewDataSource, UITableViewDelegate {
     
-    //Tab View
-//    @IBOutlet weak var containerView: UIView!
-//    @IBOutlet weak var profileImage: UIImageView!
-//    
-//    
-//    
-//    
-//    
-//    @IBOutlet weak var discoverFeed: UIView!
-//    @IBOutlet weak var newFeed: UIView!
-//    @IBOutlet weak var anotherFeed: UIView!
 
-
-    var scrollView: MXScrollView!
+    var header : StretchHeader!
     var vc:SimpleTabsViewController!
-    var containerView = UIView()
+    let tabContainerView = UIView()
+
+    @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        var frame = view.frame
-        
     
-        let customview = Bundle.main.loadNibNamed("customView", owner: nil, options: nil)![0] as! customView
-        
-        let tabContainerView = customview.tabContainerView
-        
-        print("CUSTOM CORNER RADIUS")
-        print(customview.cornerRadius)
- 
-        customview.cornerRadius = 20
-        
-        
-        
-        scrollView = MXScrollView()
-        scrollView.parallaxHeader.view = Bundle.main.loadNibNamed("customView", owner: nil, options: nil)![0] as! customView
-        scrollView.parallaxHeader.height = 300
-        scrollView.parallaxHeader.mode = MXParallaxHeaderMode.fill
-        scrollView.parallaxHeader.minimumHeight = 10
-        view.addSubview(scrollView)
-        
-        
-        containerView.translatesAutoresizingMaskIntoConstraints = false
-        containerView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: frame.size.height - 8)
-        containerView.backgroundColor = UIColor.white
-        view.addSubview(containerView)
-    
-        
-        
-        
-        let controller = storyboard?.instantiateViewController(withIdentifier: "ViewController1")
-        addChildViewController(controller!)
-        controller?.view.translatesAutoresizingMaskIntoConstraints = false
-        containerView.addSubview((controller?.view)!)
-        controller?.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: frame.size.height - 8)
-        scrollView.addSubview(containerView)
-        
-
-        let scrollHeight = frame.size.height
-        let scrollWidth = frame.size.width
-        
-//        NSLayoutConstraint.activate([
-//            containerView.widthAnchor.constraint(equalTo: view.widthAnchor, constant: scrollWidth),
-//            containerView.heightAnchor.constraint(equalTo: view.heightAnchor, constant: scrollHeight),
-//            containerView.topAnchor.constraint(equalTo: view.topAnchor, constant: 10),
-//            containerView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0),
-//            ])
-
-        
-        controller?.didMove(toParentViewController: self)
-        
+//        tableView = UITableView(frame: view.bounds, style: .plain)
+        tableView.dataSource = self
+        tableView.delegate = self
+        view.addSubview(tableView)
+        setupHeaderView()
         //Tabs Confiigure
         
         let tab1 = SimpleTabItem(title:"DISCOVER", count: 3)
         let tab2 = SimpleTabItem(title:"NEWS FEED", count: 2)
-        let tab3 = SimpleTabItem(title:"ANOTHER FEED", count: 0)
-        vc = SimpleTabsViewController.create(self, baseView: tabContainerView, delegate: self, items: [tab1,tab2,tab3])
+        let tab3 = SimpleTabItem(title:"FOLLOWERS", count: 0)
+        let tab4 = SimpleTabItem(title:"FOLLOWING", count: 0)
+        vc = SimpleTabsViewController.create(self, baseView: tabContainerView, delegate: self, items: [tab1,tab2,tab3,tab4])
         vc.setTabTitleColor(UIColor(red:0.54, green:0.54, blue:0.54, alpha:1.0))
         vc.setNumberColor(UIColor.black)
         
@@ -96,37 +39,56 @@ class ViewController: UIViewController, SimpleTabsDelegate {
         vc.setMarkerColor(UIColor(red:0.01, green:0.68, blue:0.88, alpha:1.0))
         vc.setTabTitleFont(UIFont.systemFont(ofSize: 10))
         vc.setNumberFont(UIFont.systemFont(ofSize: 14))
+        
     
     }
     
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
+    
+    func setupHeaderView() {
         
-        var frame = view.frame
+    
         
-        scrollView.frame = frame
-        scrollView.contentSize.height = frame.size.height + 20
-        scrollView.contentSize.width = frame.size.width
+        let options = StretchHeaderOptions()
+        options.position = .fullScreenTop
         
-//        frame.size.height -= scrollView.parallaxHeader.minimumHeight
-        scrollView.frame = frame
+        header = StretchHeader()
+        header.stretchHeaderSize(headerSize: CGSize(width: view.frame.size.width, height: 160),
+                                 imageSize: CGSize(width: view.frame.size.width, height: 120),
+                                 controller: self,
+                                 options: options)
+        header.imageView.backgroundColor = UIColor.clear
+//        header.imageView.image = UIImage(named: "profile.jpg")
         
+        //Measurements 
+        
+        let headerWidth = header.imageView.frame.width
+        let headerHeight = header.imageView.frame.height
+        let headerWidthCenter = headerWidth / 2
+        let headerHeightCenter = headerHeight / 2
+        // custom
+        let profileImage = UIImageView()
+        profileImage.frame = CGRect(x: headerWidthCenter - 30, y: headerHeightCenter - 30, width: 60, height: 60)
+        profileImage.image = UIImage(named: "profile.jpg")
+        profileImage.layer.cornerRadius = 30
+        profileImage.layer.borderColor = UIColor.white.cgColor
+        profileImage.layer.borderWidth = 3.0
+        profileImage.clipsToBounds = true
+        profileImage.contentMode = .scaleAspectFill
+        header.addSubview(profileImage)
+        
+        
+  
+        tabContainerView.frame = CGRect(x: 0, y: profileImage.frame.origin.y + 90, width: headerWidth, height: 80)
+        header.addSubview(tabContainerView)
+    
+        
+  
 
-        
-        
-//
-//        
-//        let bottomConstraint = NSLayoutConstraint(item: containerView, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: view, attribute: NSLayoutAttribute.bottom, multiplier: 1, constant: 0)
-//        let horizConstraint = NSLayoutConstraint(item: containerView, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: view, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0)
-//        let widthConstraint = NSLayoutConstraint(item: containerView, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: scrollWidth)
-//        let heightConstraint = NSLayoutConstraint(item: containerView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: scrollHeight)
-//        
-//        NSLayoutConstraint.activate([bottomConstraint, horizConstraint, widthConstraint, heightConstraint])
-//        
-        
-
+        tableView.tableHeaderView = header
     }
+
+
     
 
     override func didReceiveMemoryWarning() {
@@ -134,6 +96,46 @@ class ViewController: UIViewController, SimpleTabsDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
+    
+    // MARK: - ScrollView Delegate
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        header.updateScrollViewOffset(scrollView)
+        
+//        // NavigationHeader alpha update
+//        let offset : CGFloat = scrollView.contentOffset.y
+//        if (offset > 50) {
+//            let alpha : CGFloat = min(CGFloat(1), CGFloat(1) - (CGFloat(50) + (navigationView.frame.height) - offset) / (navigationView.frame.height))
+//            navigationView.alpha = CGFloat(alpha)
+//            
+//        } else {
+//            navigationView.alpha = 0.0;
+//        }
+    }
+    
+    // MARK: - Table view data source
+    func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 20
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath)
+        let cellTwo = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! goalViewCell
+        
+        
+        cellTwo.goalLabel.text = "index -- \((indexPath as NSIndexPath).row)"
+
+        
+        return cell
+    }
     
     
     
