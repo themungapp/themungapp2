@@ -1,0 +1,1224 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00D014F26E8C34A7A0153DA9C2DCC836 /* FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9581AE5E4445D51F860469E21C6825 /* FBKVOController.m */; };
+		012A48376B361EC9AD00010D8B37E7AF /* Pods-Mung-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C68FC2805C877697BA8F15834B674C15 /* Pods-Mung-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D88DEAC8F430AD4FCC6392CBC7E07CF /* MXParallaxHeader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58CCA6F6C5A9C30C7AEB37560A04FA1D /* MXParallaxHeader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EF2550EC27C70869BA1677C0A2CAD3E /* StretchHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8271920C37F535850FA25292764DE8 /* StretchHeader.swift */; };
+		0F6FCF15CC1F4F05C46539443FDA2AAB /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89225DFD40AAB9C4FB9E4F38174DB01A /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F83AD14CDEBD948303F4EFB9286D130 /* MXScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FADF406EE2B27999140DE0F031F597 /* MXScrollViewController.m */; };
+		1632D00F607D3A47D3822CC91A94634B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E093D627869B650AB8D6411D2DE6B7A /* Foundation.framework */; };
+		1D43299D94A9A956287AD2A875FAD798 /* RAMFrameItemAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ADC227B9401F6DFB362135A714811E /* RAMFrameItemAnimation.swift */; };
+		1E7623B9420C3E71FAE3287C0CECA040 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = B515C488C3ECCA91D7FBF049EB373662 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		290DE764D7F93262BD2613796AA51AE1 /* MXScrollViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BE4FC7B3BEF8210BDA688F5E184146C /* MXScrollViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35B06F14F6B3789F51E96D7CFA299F7D /* RAMAnimatedTabBarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50F90F06682F413482CEDC7FC5DF04EA /* RAMAnimatedTabBarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		384A06BF982666B68CB29575C0863513 /* KVOController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5431B60607DD928C914C4A79CFB91D7E /* KVOController-dummy.m */; };
+		3A2B4200D5E7F6FF3E470C5B4221CA59 /* StretchHeader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0BA46F8DED3D30FA3661117CD36F9F /* StretchHeader-dummy.m */; };
+		40C42F3F5DD94F29414FB7BF431221AC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1264325C4220C1BDC3C73E5D496129FD /* CoreGraphics.framework */; };
+		41C1A4E81B6524876231AAED644C9C85 /* StretchHeader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E5632C88BDD2A367FC3AC3EDDEB6F07 /* StretchHeader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ECF71AFDF5EDF5B7CDAAD4C39EC77E1 /* RAMAnimatedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222D730527226E599B4B2C1E50B821C3 /* RAMAnimatedTabBarController.swift */; };
+		679F7BD42B03BEB3DD634810FCEECA41 /* KVOController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CFE7B50E6FEE51A9A73F49E221C5CB9 /* KVOController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7223F2D78A55A3B6DF2F4C9373E140BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E093D627869B650AB8D6411D2DE6B7A /* Foundation.framework */; };
+		763C3F7146FBB5DAA749047F68B19A26 /* Pods-Mung-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE496B6ACCBEC3BF4B370A86FA8F9E9 /* Pods-Mung-dummy.m */; };
+		7D51A0986E6CE918A064FF5FE082663C /* RAMAnimatedTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 781965FF4C62296DC5EB1C620D582088 /* RAMAnimatedTabBarController-dummy.m */; };
+		8BB5EEC0F7FF87215A78291CA9EA9CFC /* MXParallaxHeader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E791CB83F11E1A4E61AD0DAB774E6AA /* MXParallaxHeader-dummy.m */; };
+		8BBD996BFF5BB881E67DC747DA2CC360 /* RAMTransitionItemAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E8BB0596DD8CB26D6B779F92377828 /* RAMTransitionItemAnimations.swift */; };
+		8CF56E86D3BEACD35FB93EBB991CBA73 /* KVOController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F20AADC43CBB8FD3318FD0CE1E3D3C8 /* KVOController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E17CC11959A1FE5566CE528047ACDC0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5C7ACA98DBEF794453860A242FBE0C /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A31E71F78FB50060EFB05BECE5FE6704 /* RAMBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B830C3A7440CD05A7B2DB35F8DE3C6E5 /* RAMBadge.swift */; };
+		A5A74AB6E35786719EF5D1348B5B9D0F /* MXScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B65AE3FA61AC6669D60901E71BE28 /* MXScrollView.m */; };
+		AB95C0D1ACB2ECECF11C319B315DAD4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E093D627869B650AB8D6411D2DE6B7A /* Foundation.framework */; };
+		ADC88F735B1A5E6C2AF8B77018E33DBC /* MXScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F2264D514778F1E4BDA2439C72982A9 /* MXScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B171DD3A0B19F506ECB3E97042A44A95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E093D627869B650AB8D6411D2DE6B7A /* Foundation.framework */; };
+		B5747D2BFAF70A336D7106BD2B864A23 /* NSObject+FBKVOController.h in Headers */ = {isa = PBXBuildFile; fileRef = F195E9010736669251F8DC9C876276B4 /* NSObject+FBKVOController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB010EE04BA829E196554A00A951AA7C /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 424585FE1FDDE682645CD11824E8FB6F /* MBProgressHUD-dummy.m */; };
+		C03FA2E3709C58EF0805C365E0E1F0DE /* RAMFumeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C27E7AE56AC8EC05EF74FE430E94CE /* RAMFumeAnimation.swift */; };
+		CE834AB57F673E1627734747B9458512 /* StretchHeaderOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065A6F93E64C2CED6171322580FC4F3 /* StretchHeaderOptions.swift */; };
+		CF32252E1F7B5BC9C17B768320F4B5F5 /* MXParallaxHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA22D5783382B7EFE646E998C7000DB /* MXParallaxHeader.m */; };
+		D324AE88902498C1D25F399DEBDB7654 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E093D627869B650AB8D6411D2DE6B7A /* Foundation.framework */; };
+		D5CEF42207C1FC7B359EDC1D7E598B13 /* NSObject+FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A66587D839F53330F72AF9D75CCB59 /* NSObject+FBKVOController.m */; };
+		D78A9D71FD133DA442362F1B7CCACED9 /* RAMItemAnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2974C329837487748338C6ED0D8BB75B /* RAMItemAnimationProtocol.swift */; };
+		DCC5FCCEE6BC7608E0211E68B2717867 /* RAMRotationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D01CA7F29EA8201A8FD0EF2CF6EE7 /* RAMRotationAnimation.swift */; };
+		E480E624052C25325AAFA81D26F84AFE /* MXParallaxHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = CC6C754F825F9C26374DBAC1D8425E45 /* MXParallaxHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F91F43D8491E2BE65005C0EFFCFCDC4B /* RAMBounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE10EB6D7348CE4654360499A85B754 /* RAMBounceAnimation.swift */; };
+		FAC9CAA5FE7CDE138C25038B0560CD54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E093D627869B650AB8D6411D2DE6B7A /* Foundation.framework */; };
+		FDBD24F1CA037664329524E31EC47670 /* FBKVOController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B9D298B1133725B65BB2649FB158289 /* FBKVOController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1FAA625BB7F737186CD9F64789626320 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E61CE3B6DFA1FE6B3E296965C76C0E10;
+			remoteInfo = MBProgressHUD;
+		};
+		32280D28E6510D0C9C755BE9E7DF8B9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1A990DCB940D76B84ACC89589AE51FC;
+			remoteInfo = RAMAnimatedTabBarController;
+		};
+		4ABBB1B6722696D1E88EA0ED96C425C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE58340C183B963C900C9FF91F7C3E95;
+			remoteInfo = MXParallaxHeader;
+		};
+		853F3B0CD0EA4D6938AB7AA3A32FB5A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 153761C84E3A539D0E066DABD58B75DC;
+			remoteInfo = KVOController;
+		};
+		EF0F123A42500748B9813083031E4682 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC879417722DC5996D1C88CEA7EC5EDA;
+			remoteInfo = StretchHeader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00FC76BC38B8C4F6C35C3DCABB4A3921 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04BF02E1F188958F243F74A3BAC57554 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
+		04C239349C4940B27CFF5D5511DDA0AD /* KVOController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KVOController.modulemap; sourceTree = "<group>"; };
+		04EB86DC5B0005269F26A22D61842226 /* StretchHeader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = StretchHeader.modulemap; sourceTree = "<group>"; };
+		1264325C4220C1BDC3C73E5D496129FD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		13947B6D97C063A36ED5DA1CFB989CE9 /* MXParallaxHeader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MXParallaxHeader-prefix.pch"; sourceTree = "<group>"; };
+		1DE496B6ACCBEC3BF4B370A86FA8F9E9 /* Pods-Mung-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Mung-dummy.m"; sourceTree = "<group>"; };
+		1F3D01CA7F29EA8201A8FD0EF2CF6EE7 /* RAMRotationAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMRotationAnimation.swift; path = RAMAnimatedTabBarController/Animations/RotationAnimation/RAMRotationAnimation.swift; sourceTree = "<group>"; };
+		1F8B65AE3FA61AC6669D60901E71BE28 /* MXScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MXScrollView.m; path = MXParallaxHeader/MXScrollView.m; sourceTree = "<group>"; };
+		222D730527226E599B4B2C1E50B821C3 /* RAMAnimatedTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMAnimatedTabBarController.swift; path = RAMAnimatedTabBarController/RAMAnimatedTabBarController.swift; sourceTree = "<group>"; };
+		24F8B2C861EEA884981F2781067C5B73 /* Pods-Mung-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Mung-acknowledgements.plist"; sourceTree = "<group>"; };
+		2609F6F6C05343529AC0169C3DA2CC4C /* StretchHeader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StretchHeader-prefix.pch"; sourceTree = "<group>"; };
+		2974C329837487748338C6ED0D8BB75B /* RAMItemAnimationProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMItemAnimationProtocol.swift; path = RAMAnimatedTabBarController/RAMItemAnimationProtocol.swift; sourceTree = "<group>"; };
+		2AC0A4762B2224E574C5F7C7461DB532 /* KVOController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KVOController.xcconfig; sourceTree = "<group>"; };
+		2BE4FC7B3BEF8210BDA688F5E184146C /* MXScrollViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXScrollViewController.h; path = MXParallaxHeader/MXScrollViewController.h; sourceTree = "<group>"; };
+		30ADC227B9401F6DFB362135A714811E /* RAMFrameItemAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMFrameItemAnimation.swift; path = RAMAnimatedTabBarController/Animations/FrameAnimation/RAMFrameItemAnimation.swift; sourceTree = "<group>"; };
+		3559DB212BF155E84A01986CB4D55B7C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E8271920C37F535850FA25292764DE8 /* StretchHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StretchHeader.swift; path = StretchHeader/StretchHeader.swift; sourceTree = "<group>"; };
+		424585FE1FDDE682645CD11824E8FB6F /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		43E922E21FA1BBDDCCE1FB5654A45D8D /* RAMAnimatedTabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RAMAnimatedTabBarController.modulemap; sourceTree = "<group>"; };
+		4E5632C88BDD2A367FC3AC3EDDEB6F07 /* StretchHeader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StretchHeader-umbrella.h"; sourceTree = "<group>"; };
+		4E791CB83F11E1A4E61AD0DAB774E6AA /* MXParallaxHeader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MXParallaxHeader-dummy.m"; sourceTree = "<group>"; };
+		4FD3BE340093628994BBFEAB013A40C8 /* MXParallaxHeader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MXParallaxHeader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50DC969CC778962B1AED64795C456C88 /* Pods-Mung.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Mung.debug.xcconfig"; sourceTree = "<group>"; };
+		50F90F06682F413482CEDC7FC5DF04EA /* RAMAnimatedTabBarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RAMAnimatedTabBarController-umbrella.h"; sourceTree = "<group>"; };
+		510459C1F81005A23F32E87DBC1919A1 /* MXParallaxHeader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MXParallaxHeader.xcconfig; sourceTree = "<group>"; };
+		5431B60607DD928C914C4A79CFB91D7E /* KVOController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KVOController-dummy.m"; sourceTree = "<group>"; };
+		54E8BB0596DD8CB26D6B779F92377828 /* RAMTransitionItemAnimations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMTransitionItemAnimations.swift; path = RAMAnimatedTabBarController/Animations/TransitionAniamtions/RAMTransitionItemAnimations.swift; sourceTree = "<group>"; };
+		58CCA6F6C5A9C30C7AEB37560A04FA1D /* MXParallaxHeader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MXParallaxHeader-umbrella.h"; sourceTree = "<group>"; };
+		5BB972AE2695DD42EC4F0C993C52A4A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CA22D5783382B7EFE646E998C7000DB /* MXParallaxHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MXParallaxHeader.m; path = MXParallaxHeader/MXParallaxHeader.m; sourceTree = "<group>"; };
+		5CFE7B50E6FEE51A9A73F49E221C5CB9 /* KVOController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVOController-umbrella.h"; sourceTree = "<group>"; };
+		5F20AADC43CBB8FD3318FD0CE1E3D3C8 /* KVOController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KVOController.h; path = FBKVOController/KVOController.h; sourceTree = "<group>"; };
+		5F97BCFF48DD6EC1E4EBE6D1E97E2C67 /* KVOController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KVOController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60A66587D839F53330F72AF9D75CCB59 /* NSObject+FBKVOController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+FBKVOController.m"; path = "FBKVOController/NSObject+FBKVOController.m"; sourceTree = "<group>"; };
+		68A5482E1660333FE5403A172797F1D1 /* Pods-Mung-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Mung-frameworks.sh"; sourceTree = "<group>"; };
+		6D2C0980304697B8E591DC9B2395A699 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E093D627869B650AB8D6411D2DE6B7A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6F2264D514778F1E4BDA2439C72982A9 /* MXScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXScrollView.h; path = MXParallaxHeader/MXScrollView.h; sourceTree = "<group>"; };
+		77E46491FA5E06FB65E0FDE9D36D9115 /* Pods-Mung.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Mung.modulemap"; sourceTree = "<group>"; };
+		781965FF4C62296DC5EB1C620D582088 /* RAMAnimatedTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RAMAnimatedTabBarController-dummy.m"; sourceTree = "<group>"; };
+		82C1EFB870A20CE579C0541DDBD169A0 /* Pods-Mung-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Mung-resources.sh"; sourceTree = "<group>"; };
+		884033E51688E04643C64B867F150907 /* Pods_Mung.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mung.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89225DFD40AAB9C4FB9E4F38174DB01A /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		8B9D298B1133725B65BB2649FB158289 /* FBKVOController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBKVOController.h; path = FBKVOController/FBKVOController.h; sourceTree = "<group>"; };
+		8E9581AE5E4445D51F860469E21C6825 /* FBKVOController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBKVOController.m; path = FBKVOController/FBKVOController.m; sourceTree = "<group>"; };
+		9616102847FA2250B17E19E9E428389E /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		97B28CC1E04D116181356777EC6112AE /* Pods-Mung.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Mung.release.xcconfig"; sourceTree = "<group>"; };
+		985B3C7241C86CE6EC096153F1D7A258 /* RAMAnimatedTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RAMAnimatedTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BB74BC59638E9BC94F4ADBD0B5ABAC1 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		9F5C7ACA98DBEF794453860A242FBE0C /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		9FE10EB6D7348CE4654360499A85B754 /* RAMBounceAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMBounceAnimation.swift; path = RAMAnimatedTabBarController/Animations/BounceAnimation/RAMBounceAnimation.swift; sourceTree = "<group>"; };
+		A9FADF406EE2B27999140DE0F031F597 /* MXScrollViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MXScrollViewController.m; path = MXParallaxHeader/MXScrollViewController.m; sourceTree = "<group>"; };
+		ACDEA23D968855068D73F6664230D84C /* RAMAnimatedTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RAMAnimatedTabBarController.xcconfig; sourceTree = "<group>"; };
+		B3C27E7AE56AC8EC05EF74FE430E94CE /* RAMFumeAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMFumeAnimation.swift; path = RAMAnimatedTabBarController/Animations/FumeAnimation/RAMFumeAnimation.swift; sourceTree = "<group>"; };
+		B515C488C3ECCA91D7FBF049EB373662 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		B830C3A7440CD05A7B2DB35F8DE3C6E5 /* RAMBadge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMBadge.swift; path = RAMAnimatedTabBarController/RAMBadge/RAMBadge.swift; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC03337A68261ACD2D160267692441B4 /* StretchHeader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StretchHeader.xcconfig; sourceTree = "<group>"; };
+		BF83D25C012D08A444AE3E47CC09308D /* MXParallaxHeader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MXParallaxHeader.modulemap; sourceTree = "<group>"; };
+		C68FC2805C877697BA8F15834B674C15 /* Pods-Mung-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Mung-umbrella.h"; sourceTree = "<group>"; };
+		CC6C754F825F9C26374DBAC1D8425E45 /* MXParallaxHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXParallaxHeader.h; path = MXParallaxHeader/MXParallaxHeader.h; sourceTree = "<group>"; };
+		DDA44A9143303093CE3BA89490872809 /* Pods-Mung-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Mung-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DE0BA46F8DED3D30FA3661117CD36F9F /* StretchHeader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StretchHeader-dummy.m"; sourceTree = "<group>"; };
+		E065A6F93E64C2CED6171322580FC4F3 /* StretchHeaderOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StretchHeaderOptions.swift; path = StretchHeader/StretchHeaderOptions.swift; sourceTree = "<group>"; };
+		E37C8B081CDBB1F6B4BAC6AAE81544E4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3D249098A1BAB267661D10EB17D088B /* StretchHeader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StretchHeader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E81D901E467D71C2838414C60D0E3549 /* KVOController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVOController-prefix.pch"; sourceTree = "<group>"; };
+		ED6092358B7444B9CDA4CB7B49FF72D4 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F195E9010736669251F8DC9C876276B4 /* NSObject+FBKVOController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+FBKVOController.h"; path = "FBKVOController/NSObject+FBKVOController.h"; sourceTree = "<group>"; };
+		FCC812FF1D81016423ADC5E1285BD663 /* RAMAnimatedTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RAMAnimatedTabBarController-prefix.pch"; sourceTree = "<group>"; };
+		FD018AEDD17D5D5BD25BDB4AF05C61C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35397DED1A861534130CA5D910F6286F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1632D00F607D3A47D3822CC91A94634B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6335C46B518C4A96BB3475F1443CC4FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D324AE88902498C1D25F399DEBDB7654 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6488DB2C9BB99C53077D390CE673DD56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40C42F3F5DD94F29414FB7BF431221AC /* CoreGraphics.framework in Frameworks */,
+				7223F2D78A55A3B6DF2F4C9373E140BC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82252CE88E4C56E93BF7325573B9F9AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC9CAA5FE7CDE138C25038B0560CD54 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD6E14A28D683E6B34B9632A33AEDAE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B171DD3A0B19F506ECB3E97042A44A95 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3EF5F30F6F0AA68FE79C1C080649800 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB95C0D1ACB2ECECF11C319B315DAD4F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A1B7E33EA1A0F00ABD413473125DC14 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D2C0980304697B8E591DC9B2395A699 /* Info.plist */,
+				BF83D25C012D08A444AE3E47CC09308D /* MXParallaxHeader.modulemap */,
+				510459C1F81005A23F32E87DBC1919A1 /* MXParallaxHeader.xcconfig */,
+				4E791CB83F11E1A4E61AD0DAB774E6AA /* MXParallaxHeader-dummy.m */,
+				13947B6D97C063A36ED5DA1CFB989CE9 /* MXParallaxHeader-prefix.pch */,
+				58CCA6F6C5A9C30C7AEB37560A04FA1D /* MXParallaxHeader-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MXParallaxHeader";
+			sourceTree = "<group>";
+		};
+		0E4EBA63621EE5D7ED6FE6A853A6148D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				651EFEDF0643C3C1B2A96608CC175A96 /* KVOController */,
+				B4CE6EFC31181024AE24C3BFA85B06EC /* MBProgressHUD */,
+				5DC03908BB9D4033E9A3A4E58B8328F2 /* MXParallaxHeader */,
+				A6CC8EE6B1C9AF1CBAF6666E58348C9D /* RAMAnimatedTabBarController */,
+				82C739715F9CCA6C7A432A02394D3553 /* StretchHeader */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		19707EA317D830AEB8F2671FED7A6957 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BB972AE2695DD42EC4F0C993C52A4A6 /* Info.plist */,
+				04EB86DC5B0005269F26A22D61842226 /* StretchHeader.modulemap */,
+				BC03337A68261ACD2D160267692441B4 /* StretchHeader.xcconfig */,
+				DE0BA46F8DED3D30FA3661117CD36F9F /* StretchHeader-dummy.m */,
+				2609F6F6C05343529AC0169C3DA2CC4C /* StretchHeader-prefix.pch */,
+				4E5632C88BDD2A367FC3AC3EDDEB6F07 /* StretchHeader-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/StretchHeader";
+			sourceTree = "<group>";
+		};
+		36C06A02A00144C64CD7282BA31846BD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1264325C4220C1BDC3C73E5D496129FD /* CoreGraphics.framework */,
+				6E093D627869B650AB8D6411D2DE6B7A /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3C82BB1EC957BEF08FC9412A17813D9F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				00FC76BC38B8C4F6C35C3DCABB4A3921 /* Info.plist */,
+				04C239349C4940B27CFF5D5511DDA0AD /* KVOController.modulemap */,
+				2AC0A4762B2224E574C5F7C7461DB532 /* KVOController.xcconfig */,
+				5431B60607DD928C914C4A79CFB91D7E /* KVOController-dummy.m */,
+				E81D901E467D71C2838414C60D0E3549 /* KVOController-prefix.pch */,
+				5CFE7B50E6FEE51A9A73F49E221C5CB9 /* KVOController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KVOController";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36C06A02A00144C64CD7282BA31846BD /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DC03908BB9D4033E9A3A4E58B8328F2 /* MXParallaxHeader */ = {
+			isa = PBXGroup;
+			children = (
+				CC6C754F825F9C26374DBAC1D8425E45 /* MXParallaxHeader.h */,
+				5CA22D5783382B7EFE646E998C7000DB /* MXParallaxHeader.m */,
+				6F2264D514778F1E4BDA2439C72982A9 /* MXScrollView.h */,
+				1F8B65AE3FA61AC6669D60901E71BE28 /* MXScrollView.m */,
+				2BE4FC7B3BEF8210BDA688F5E184146C /* MXScrollViewController.h */,
+				A9FADF406EE2B27999140DE0F031F597 /* MXScrollViewController.m */,
+				0A1B7E33EA1A0F00ABD413473125DC14 /* Support Files */,
+			);
+			path = MXParallaxHeader;
+			sourceTree = "<group>";
+		};
+		651EFEDF0643C3C1B2A96608CC175A96 /* KVOController */ = {
+			isa = PBXGroup;
+			children = (
+				8B9D298B1133725B65BB2649FB158289 /* FBKVOController.h */,
+				8E9581AE5E4445D51F860469E21C6825 /* FBKVOController.m */,
+				5F20AADC43CBB8FD3318FD0CE1E3D3C8 /* KVOController.h */,
+				F195E9010736669251F8DC9C876276B4 /* NSObject+FBKVOController.h */,
+				60A66587D839F53330F72AF9D75CCB59 /* NSObject+FBKVOController.m */,
+				3C82BB1EC957BEF08FC9412A17813D9F /* Support Files */,
+			);
+			path = KVOController;
+			sourceTree = "<group>";
+		};
+		77BF6F3C101343C66C37F0FC1CD07C65 /* Pods-Mung */ = {
+			isa = PBXGroup;
+			children = (
+				3559DB212BF155E84A01986CB4D55B7C /* Info.plist */,
+				77E46491FA5E06FB65E0FDE9D36D9115 /* Pods-Mung.modulemap */,
+				DDA44A9143303093CE3BA89490872809 /* Pods-Mung-acknowledgements.markdown */,
+				24F8B2C861EEA884981F2781067C5B73 /* Pods-Mung-acknowledgements.plist */,
+				1DE496B6ACCBEC3BF4B370A86FA8F9E9 /* Pods-Mung-dummy.m */,
+				68A5482E1660333FE5403A172797F1D1 /* Pods-Mung-frameworks.sh */,
+				82C1EFB870A20CE579C0541DDBD169A0 /* Pods-Mung-resources.sh */,
+				C68FC2805C877697BA8F15834B674C15 /* Pods-Mung-umbrella.h */,
+				50DC969CC778962B1AED64795C456C88 /* Pods-Mung.debug.xcconfig */,
+				97B28CC1E04D116181356777EC6112AE /* Pods-Mung.release.xcconfig */,
+			);
+			name = "Pods-Mung";
+			path = "Target Support Files/Pods-Mung";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				0E4EBA63621EE5D7ED6FE6A853A6148D /* Pods */,
+				D79FE1FD323ACEF8E12D55037B9734B5 /* Products */,
+				D2A198F7E48281C1324FF3A6F274E0C7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		82C739715F9CCA6C7A432A02394D3553 /* StretchHeader */ = {
+			isa = PBXGroup;
+			children = (
+				3E8271920C37F535850FA25292764DE8 /* StretchHeader.swift */,
+				E065A6F93E64C2CED6171322580FC4F3 /* StretchHeaderOptions.swift */,
+				19707EA317D830AEB8F2671FED7A6957 /* Support Files */,
+			);
+			path = StretchHeader;
+			sourceTree = "<group>";
+		};
+		A6CC8EE6B1C9AF1CBAF6666E58348C9D /* RAMAnimatedTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				222D730527226E599B4B2C1E50B821C3 /* RAMAnimatedTabBarController.swift */,
+				B830C3A7440CD05A7B2DB35F8DE3C6E5 /* RAMBadge.swift */,
+				9FE10EB6D7348CE4654360499A85B754 /* RAMBounceAnimation.swift */,
+				30ADC227B9401F6DFB362135A714811E /* RAMFrameItemAnimation.swift */,
+				B3C27E7AE56AC8EC05EF74FE430E94CE /* RAMFumeAnimation.swift */,
+				2974C329837487748338C6ED0D8BB75B /* RAMItemAnimationProtocol.swift */,
+				1F3D01CA7F29EA8201A8FD0EF2CF6EE7 /* RAMRotationAnimation.swift */,
+				54E8BB0596DD8CB26D6B779F92377828 /* RAMTransitionItemAnimations.swift */,
+				CDC26BCE08B56A1C5ECB6BCE51AA7C28 /* Support Files */,
+			);
+			path = RAMAnimatedTabBarController;
+			sourceTree = "<group>";
+		};
+		B4CE6EFC31181024AE24C3BFA85B06EC /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				B515C488C3ECCA91D7FBF049EB373662 /* MBProgressHUD.h */,
+				9F5C7ACA98DBEF794453860A242FBE0C /* MBProgressHUD.m */,
+				D1546437392C69A815BAA10AC7B2C79F /* Support Files */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		CDC26BCE08B56A1C5ECB6BCE51AA7C28 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD018AEDD17D5D5BD25BDB4AF05C61C7 /* Info.plist */,
+				43E922E21FA1BBDDCCE1FB5654A45D8D /* RAMAnimatedTabBarController.modulemap */,
+				ACDEA23D968855068D73F6664230D84C /* RAMAnimatedTabBarController.xcconfig */,
+				781965FF4C62296DC5EB1C620D582088 /* RAMAnimatedTabBarController-dummy.m */,
+				FCC812FF1D81016423ADC5E1285BD663 /* RAMAnimatedTabBarController-prefix.pch */,
+				50F90F06682F413482CEDC7FC5DF04EA /* RAMAnimatedTabBarController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RAMAnimatedTabBarController";
+			sourceTree = "<group>";
+		};
+		D1546437392C69A815BAA10AC7B2C79F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E37C8B081CDBB1F6B4BAC6AAE81544E4 /* Info.plist */,
+				04BF02E1F188958F243F74A3BAC57554 /* MBProgressHUD.modulemap */,
+				9616102847FA2250B17E19E9E428389E /* MBProgressHUD.xcconfig */,
+				424585FE1FDDE682645CD11824E8FB6F /* MBProgressHUD-dummy.m */,
+				9BB74BC59638E9BC94F4ADBD0B5ABAC1 /* MBProgressHUD-prefix.pch */,
+				89225DFD40AAB9C4FB9E4F38174DB01A /* MBProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		D2A198F7E48281C1324FF3A6F274E0C7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				77BF6F3C101343C66C37F0FC1CD07C65 /* Pods-Mung */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D79FE1FD323ACEF8E12D55037B9734B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F97BCFF48DD6EC1E4EBE6D1E97E2C67 /* KVOController.framework */,
+				ED6092358B7444B9CDA4CB7B49FF72D4 /* MBProgressHUD.framework */,
+				4FD3BE340093628994BBFEAB013A40C8 /* MXParallaxHeader.framework */,
+				884033E51688E04643C64B867F150907 /* Pods_Mung.framework */,
+				985B3C7241C86CE6EC096153F1D7A258 /* RAMAnimatedTabBarController.framework */,
+				E3D249098A1BAB267661D10EB17D088B /* StretchHeader.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		489C787AA78A70238D1150E19D931FD5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C1A4E81B6524876231AAED644C9C85 /* StretchHeader-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B7AE275A127DDDFE90ED7B1540B7940 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012A48376B361EC9AD00010D8B37E7AF /* Pods-Mung-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ECCB5570B7FBF8D348655FFA0FE9C90 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F6FCF15CC1F4F05C46539443FDA2AAB /* MBProgressHUD-umbrella.h in Headers */,
+				1E7623B9420C3E71FAE3287C0CECA040 /* MBProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FBC884928E65E86EAA0597FA5709729 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDBD24F1CA037664329524E31EC47670 /* FBKVOController.h in Headers */,
+				679F7BD42B03BEB3DD634810FCEECA41 /* KVOController-umbrella.h in Headers */,
+				8CF56E86D3BEACD35FB93EBB991CBA73 /* KVOController.h in Headers */,
+				B5747D2BFAF70A336D7106BD2B864A23 /* NSObject+FBKVOController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABB9A1DDDC2AFBD8D29DD674D60F47F4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35B06F14F6B3789F51E96D7CFA299F7D /* RAMAnimatedTabBarController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D23317A520E6DE83ABE99C16BBF6B6BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D88DEAC8F430AD4FCC6392CBC7E07CF /* MXParallaxHeader-umbrella.h in Headers */,
+				E480E624052C25325AAFA81D26F84AFE /* MXParallaxHeader.h in Headers */,
+				ADC88F735B1A5E6C2AF8B77018E33DBC /* MXScrollView.h in Headers */,
+				290DE764D7F93262BD2613796AA51AE1 /* MXScrollViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		153761C84E3A539D0E066DABD58B75DC /* KVOController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98845864C5F86846BD458A9428C1871B /* Build configuration list for PBXNativeTarget "KVOController" */;
+			buildPhases = (
+				516F3AFF0023BC8286FF979E8BC0B0D1 /* Sources */,
+				CD6E14A28D683E6B34B9632A33AEDAE0 /* Frameworks */,
+				9FBC884928E65E86EAA0597FA5709729 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KVOController;
+			productName = KVOController;
+			productReference = 5F97BCFF48DD6EC1E4EBE6D1E97E2C67 /* KVOController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AE58340C183B963C900C9FF91F7C3E95 /* MXParallaxHeader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 817BB0B4D37E8A5986D7C178B8F59F4D /* Build configuration list for PBXNativeTarget "MXParallaxHeader" */;
+			buildPhases = (
+				8C0EB8E2034BF9A80EFDA82A9975FD77 /* Sources */,
+				6335C46B518C4A96BB3475F1443CC4FC /* Frameworks */,
+				D23317A520E6DE83ABE99C16BBF6B6BF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MXParallaxHeader;
+			productName = MXParallaxHeader;
+			productReference = 4FD3BE340093628994BBFEAB013A40C8 /* MXParallaxHeader.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CC879417722DC5996D1C88CEA7EC5EDA /* StretchHeader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89E3B795B5CF574A50B3B1C0D9CC15FB /* Build configuration list for PBXNativeTarget "StretchHeader" */;
+			buildPhases = (
+				3849C7ED6B7868C757876EFD40E03979 /* Sources */,
+				82252CE88E4C56E93BF7325573B9F9AD /* Frameworks */,
+				489C787AA78A70238D1150E19D931FD5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StretchHeader;
+			productName = StretchHeader;
+			productReference = E3D249098A1BAB267661D10EB17D088B /* StretchHeader.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E1A990DCB940D76B84ACC89589AE51FC /* RAMAnimatedTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D962BB4B1E7CCFDE1964FFF041EE2BD9 /* Build configuration list for PBXNativeTarget "RAMAnimatedTabBarController" */;
+			buildPhases = (
+				34F016BC222F0C1B50BEE401C17C6A8C /* Sources */,
+				35397DED1A861534130CA5D910F6286F /* Frameworks */,
+				ABB9A1DDDC2AFBD8D29DD674D60F47F4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RAMAnimatedTabBarController;
+			productName = RAMAnimatedTabBarController;
+			productReference = 985B3C7241C86CE6EC096153F1D7A258 /* RAMAnimatedTabBarController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E61CE3B6DFA1FE6B3E296965C76C0E10 /* MBProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ECAD3CE95CA19E5AFE91894C857527C /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
+			buildPhases = (
+				2DAFB06DF9D4B76E7F94DA2B8A63DD59 /* Sources */,
+				6488DB2C9BB99C53077D390CE673DD56 /* Frameworks */,
+				9ECCB5570B7FBF8D348655FFA0FE9C90 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBProgressHUD;
+			productName = MBProgressHUD;
+			productReference = ED6092358B7444B9CDA4CB7B49FF72D4 /* MBProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FE26C6D32A51B08E45AAD552091F35E8 /* Pods-Mung */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7BBC61ACD135D9B91147B9627402ECB /* Build configuration list for PBXNativeTarget "Pods-Mung" */;
+			buildPhases = (
+				8F33D568F8A31486D8040716B49A49E9 /* Sources */,
+				D3EF5F30F6F0AA68FE79C1C080649800 /* Frameworks */,
+				5B7AE275A127DDDFE90ED7B1540B7940 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8840848F264D5E1383E8094E764C97E8 /* PBXTargetDependency */,
+				84361E68FF3714C213425C659FD7DD05 /* PBXTargetDependency */,
+				ACD39E70A072C944593AB7F060080C97 /* PBXTargetDependency */,
+				FB76A033D40234F6D63C4BC5F742533E /* PBXTargetDependency */,
+				B4ADDCD24664131638D02F2FFEE92945 /* PBXTargetDependency */,
+			);
+			name = "Pods-Mung";
+			productName = "Pods-Mung";
+			productReference = 884033E51688E04643C64B867F150907 /* Pods_Mung.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					CC879417722DC5996D1C88CEA7EC5EDA = {
+						LastSwiftMigration = 0800;
+					};
+					E1A990DCB940D76B84ACC89589AE51FC = {
+						LastSwiftMigration = 0800;
+					};
+					FE26C6D32A51B08E45AAD552091F35E8 = {
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D79FE1FD323ACEF8E12D55037B9734B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				153761C84E3A539D0E066DABD58B75DC /* KVOController */,
+				E61CE3B6DFA1FE6B3E296965C76C0E10 /* MBProgressHUD */,
+				AE58340C183B963C900C9FF91F7C3E95 /* MXParallaxHeader */,
+				FE26C6D32A51B08E45AAD552091F35E8 /* Pods-Mung */,
+				E1A990DCB940D76B84ACC89589AE51FC /* RAMAnimatedTabBarController */,
+				CC879417722DC5996D1C88CEA7EC5EDA /* StretchHeader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DAFB06DF9D4B76E7F94DA2B8A63DD59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB010EE04BA829E196554A00A951AA7C /* MBProgressHUD-dummy.m in Sources */,
+				9E17CC11959A1FE5566CE528047ACDC0 /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34F016BC222F0C1B50BEE401C17C6A8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D51A0986E6CE918A064FF5FE082663C /* RAMAnimatedTabBarController-dummy.m in Sources */,
+				5ECF71AFDF5EDF5B7CDAAD4C39EC77E1 /* RAMAnimatedTabBarController.swift in Sources */,
+				A31E71F78FB50060EFB05BECE5FE6704 /* RAMBadge.swift in Sources */,
+				F91F43D8491E2BE65005C0EFFCFCDC4B /* RAMBounceAnimation.swift in Sources */,
+				1D43299D94A9A956287AD2A875FAD798 /* RAMFrameItemAnimation.swift in Sources */,
+				C03FA2E3709C58EF0805C365E0E1F0DE /* RAMFumeAnimation.swift in Sources */,
+				D78A9D71FD133DA442362F1B7CCACED9 /* RAMItemAnimationProtocol.swift in Sources */,
+				DCC5FCCEE6BC7608E0211E68B2717867 /* RAMRotationAnimation.swift in Sources */,
+				8BBD996BFF5BB881E67DC747DA2CC360 /* RAMTransitionItemAnimations.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3849C7ED6B7868C757876EFD40E03979 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A2B4200D5E7F6FF3E470C5B4221CA59 /* StretchHeader-dummy.m in Sources */,
+				0EF2550EC27C70869BA1677C0A2CAD3E /* StretchHeader.swift in Sources */,
+				CE834AB57F673E1627734747B9458512 /* StretchHeaderOptions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		516F3AFF0023BC8286FF979E8BC0B0D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D014F26E8C34A7A0153DA9C2DCC836 /* FBKVOController.m in Sources */,
+				384A06BF982666B68CB29575C0863513 /* KVOController-dummy.m in Sources */,
+				D5CEF42207C1FC7B359EDC1D7E598B13 /* NSObject+FBKVOController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C0EB8E2034BF9A80EFDA82A9975FD77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB5EEC0F7FF87215A78291CA9EA9CFC /* MXParallaxHeader-dummy.m in Sources */,
+				CF32252E1F7B5BC9C17B768320F4B5F5 /* MXParallaxHeader.m in Sources */,
+				A5A74AB6E35786719EF5D1348B5B9D0F /* MXScrollView.m in Sources */,
+				0F83AD14CDEBD948303F4EFB9286D130 /* MXScrollViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F33D568F8A31486D8040716B49A49E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				763C3F7146FBB5DAA749047F68B19A26 /* Pods-Mung-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84361E68FF3714C213425C659FD7DD05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = E61CE3B6DFA1FE6B3E296965C76C0E10 /* MBProgressHUD */;
+			targetProxy = 1FAA625BB7F737186CD9F64789626320 /* PBXContainerItemProxy */;
+		};
+		8840848F264D5E1383E8094E764C97E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KVOController;
+			target = 153761C84E3A539D0E066DABD58B75DC /* KVOController */;
+			targetProxy = 853F3B0CD0EA4D6938AB7AA3A32FB5A8 /* PBXContainerItemProxy */;
+		};
+		ACD39E70A072C944593AB7F060080C97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MXParallaxHeader;
+			target = AE58340C183B963C900C9FF91F7C3E95 /* MXParallaxHeader */;
+			targetProxy = 4ABBB1B6722696D1E88EA0ED96C425C5 /* PBXContainerItemProxy */;
+		};
+		B4ADDCD24664131638D02F2FFEE92945 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StretchHeader;
+			target = CC879417722DC5996D1C88CEA7EC5EDA /* StretchHeader */;
+			targetProxy = EF0F123A42500748B9813083031E4682 /* PBXContainerItemProxy */;
+		};
+		FB76A033D40234F6D63C4BC5F742533E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RAMAnimatedTabBarController;
+			target = E1A990DCB940D76B84ACC89589AE51FC /* RAMAnimatedTabBarController */;
+			targetProxy = 32280D28E6510D0C9C755BE9E7DF8B9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0301114A21269526AF04008CD6938423 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97B28CC1E04D116181356777EC6112AE /* Pods-Mung.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Mung/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Mung/Pods-Mung.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Mung;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1639D2F14EE1DCEAEE27C74E9C0AC517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50DC969CC778962B1AED64795C456C88 /* Pods-Mung.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Mung/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Mung/Pods-Mung.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Mung;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1EEE5179EEE2543D438AD89211BCEFA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC03337A68261ACD2D160267692441B4 /* StretchHeader.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/StretchHeader/StretchHeader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/StretchHeader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/StretchHeader/StretchHeader.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = StretchHeader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		29D2F53A942E093C1FAA0459A4BD1AC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9616102847FA2250B17E19E9E428389E /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2B389FAB51F6EEA43F72CA7BDC8E8E28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		38A9871403EB42810FFE5A2CEDAA0EA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC03337A68261ACD2D160267692441B4 /* StretchHeader.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/StretchHeader/StretchHeader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/StretchHeader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/StretchHeader/StretchHeader.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = StretchHeader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		55F404ED64E4C7B9B61767584C28B91A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9616102847FA2250B17E19E9E428389E /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5A0C6FE968931D888F00C9EC18DDF5BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5AF368D6B7AF19811260C8D3BFCEF198 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACDEA23D968855068D73F6664230D84C /* RAMAnimatedTabBarController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RAMAnimatedTabBarController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RAMAnimatedTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7012587C62A68FA314659EA4C167318F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AC0A4762B2224E574C5F7C7461DB532 /* KVOController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KVOController/KVOController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KVOController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KVOController/KVOController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KVOController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		78AEA439A50F0CC7C919B35C60789349 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 510459C1F81005A23F32E87DBC1919A1 /* MXParallaxHeader.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MXParallaxHeader/MXParallaxHeader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MXParallaxHeader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MXParallaxHeader/MXParallaxHeader.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MXParallaxHeader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8C91F0683FAF35AD6902BC8A4D50D726 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACDEA23D968855068D73F6664230D84C /* RAMAnimatedTabBarController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RAMAnimatedTabBarController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RAMAnimatedTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		95CED337EBE37AF36594E1D7A85B9334 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 510459C1F81005A23F32E87DBC1919A1 /* MXParallaxHeader.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MXParallaxHeader/MXParallaxHeader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MXParallaxHeader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MXParallaxHeader/MXParallaxHeader.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MXParallaxHeader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A61311BB1FA545A831BB1037EF654818 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AC0A4762B2224E574C5F7C7461DB532 /* KVOController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KVOController/KVOController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KVOController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KVOController/KVOController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KVOController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0ECAD3CE95CA19E5AFE91894C857527C /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55F404ED64E4C7B9B61767584C28B91A /* Debug */,
+				29D2F53A942E093C1FAA0459A4BD1AC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B389FAB51F6EEA43F72CA7BDC8E8E28 /* Debug */,
+				5A0C6FE968931D888F00C9EC18DDF5BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		817BB0B4D37E8A5986D7C178B8F59F4D /* Build configuration list for PBXNativeTarget "MXParallaxHeader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95CED337EBE37AF36594E1D7A85B9334 /* Debug */,
+				78AEA439A50F0CC7C919B35C60789349 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89E3B795B5CF574A50B3B1C0D9CC15FB /* Build configuration list for PBXNativeTarget "StretchHeader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EEE5179EEE2543D438AD89211BCEFA4 /* Debug */,
+				38A9871403EB42810FFE5A2CEDAA0EA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98845864C5F86846BD458A9428C1871B /* Build configuration list for PBXNativeTarget "KVOController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A61311BB1FA545A831BB1037EF654818 /* Debug */,
+				7012587C62A68FA314659EA4C167318F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D962BB4B1E7CCFDE1964FFF041EE2BD9 /* Build configuration list for PBXNativeTarget "RAMAnimatedTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AF368D6B7AF19811260C8D3BFCEF198 /* Debug */,
+				8C91F0683FAF35AD6902BC8A4D50D726 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7BBC61ACD135D9B91147B9627402ECB /* Build configuration list for PBXNativeTarget "Pods-Mung" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1639D2F14EE1DCEAEE27C74E9C0AC517 /* Debug */,
+				0301114A21269526AF04008CD6938423 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
