@@ -12,6 +12,8 @@ target 'Mung' do
     pod 'StretchHeader'
 pod 'KVOController'
 pod 'RAMAnimatedTabBarController', "~> 2.0.2" 
+pod 'Firebase/Core'
+
 
 end
 

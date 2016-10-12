@@ -132,9 +132,6 @@ extension  RAMAnimatedTabBarController {
    - parameter textSelectedColor: set new color for text
    - parameter iconSelectedColor: set new color for icon
    */
-   
-  
-    
   public func changeSelectedColor(_ textSelectedColor:UIColor, iconSelectedColor:UIColor) {
     
     let items = tabBar.items as! [RAMAnimatedTabBarItem]
